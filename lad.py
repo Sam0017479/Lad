@@ -28,6 +28,8 @@ async def on_message(message):
         await client.send_message(message.channel, author)
     elif message.content == "~copypasta":
         await client.send_message(message.channel, random.choice(copypastas))
+    elif message.content == "uh oh":
+        await client.send_message(message.channel, "stinky")
     else:
         return
 
